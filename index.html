@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shahidullah ❤️ Nasrin | Our Love Story</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --pink: #ff6b9d;
+    --deep: #b83265;
+    --purple: #7040a0;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hind Siliguri', sans-serif;
+    background: linear-gradient(135deg, #fff0f5, #f6e8ff, #ffe4ec);
+    color: #503044;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 35px 18px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: #ffb6cf;
+    filter: blur(100px);
+    opacity: .45;
+    border-radius: 50%;
+    top: 5%;
+    left: -100px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: #c9a2ff;
+    filter: blur(100px);
+    opacity: .4;
+    border-radius: 50%;
+    bottom: 5%;
+    right: -100px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 850px;
+}
+
+.small-heading {
+    color: var(--deep);
+    font-size: 19px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 8vw, 76px);
+    color: #a52d63;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.heart {
+    color: #ff3f7f;
+    display: inline-block;
+    animation: heartbeat 1.2s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.25); }
+}
+
+.subtitle {
+    font-size: 22px;
+    margin: 12px 0 25px;
+    color: #79516d;
+}
+
+.wedding-date {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 30px;
+    background: rgba(255,255,255,.7);
+    color: #a52d63;
+    font-size: 18px;
+    box-shadow: 0 5px 20px #e8a5c455;
+}
+
+.section {
+    padding: 65px 18px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 34px;
+    color: #a52d63;
+    margin-bottom: 12px;
+}
+
+.section-subtitle {
+    color: #87677d;
+    margin-bottom: 35px;
+    font-size: 17px;
+}
+
+.countdown-card {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 35px 20px;
+    background: rgba(255,255,255,.72);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,.8);
+    border-radius: 25px;
+    box-shadow: 0 15px 45px #b85b8830;
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.time-box {
+    background: linear-gradient(145deg, #ff78a8, #c45a9c);
+    color: white;
+    border-radius: 18px;
+    padding: 20px 8px;
+    box-shadow: 0 8px 20px #c45a9c40;
+}
+
+.time-box span {
+    display: block;
+    font-size: clamp(28px, 6vw, 46px);
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.time-box small {
+    font-size: 15px;
+}
+
+#anniversaryMessage {
+    display: none;
+    font-size: 24px;
+    color: #b83265;
+    font-weight: 700;
+    margin-top: 25px;
+    line-height: 1.8;
+}
+
+#anniversarySub {
+    display: none;
+    color: #81516e;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.slideshow {
+    max-width: 650px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px #8b3f6330;
+    background: white;
+}
+
+.slide {
+    display: none;
+    animation: fade 1s;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes fade {
+    from { opacity: .4; }
+    to { opacity: 1; }
+}
+
+.slide-controls {
+    margin-top: 18px;
+}
+
+.slide-controls button,
+.music-button {
+    border: none;
+    background: linear-gradient(135deg, #ff6b9d, #bd4d91);
+    color: white;
+    padding: 11px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    margin: 5px;
+    transition: .3s;
+}
+
+.slide-controls button:hover,
+.music-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px #c45a9c50;
+}
+
+.story-container {
+    max-width: 750px;
+    margin: auto;
+    text-align: left;
+    position: relative;
+}
+
+.story-container::before {
+    content: "";
+    position: absolute;
+    left: 17px;
+    top: 10px;
+    bottom: 10px;
+    width: 3px;
+    background: linear-gradient(#ff75a6, #b58ae8);
+}
+
+.story-item {
+    position: relative;
+    padding: 0 0 35px 55px;
+}
+
+.story-item::before {
+    content: "❤";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #ff6b9d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px #ff6b9d60;
+}
+
+.story-date {
+    color: #b83265;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.story-item h3 {
+    font-size: 22px;
+    margin: 5px 0;
+    color: #75416b;
+}
+
+.story-item p {
+    color: #806779;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.love-note {
+    max-width: 750px;
+    margin: auto;
+    padding: 35px 25px;
+    background: rgba(255,255,255,.7);
+    border-radius: 25px;
+    box-shadow: 0 10px 30px #b85b8825;
+    line-height: 2;
+    font-size: 19px;
+}
+
+.love-note h2 {
+    color: #b83265;
+    margin-bottom: 18px;
+}
+
+.signature {
+    margin-top: 22px;
+    font-weight: 700;
+    color: #b83265;
+    font-size: 22px;
+}
+
+.music-area {
+    padding: 15px;
+}
+
+footer {
+    padding: 30px 15px;
+    background: #a94478;
+    color: white;
+    text-align: center;
+    line-height: 2;
+}
+
+footer .footer-heart {
+    color: #ffd5e4;
+}
+
+.floating-heart {
+    position: fixed;
+    bottom: -30px;
+    color: #ff5b91;
+    pointer-events: none;
+    z-index: 99;
+    animation: floatUp 7s linear forwards;
+    opacity: .75;
+}
+
+.video-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.video-card {
+    background: rgba(255,255,255,.8);
+    padding: 15px;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px #b85b8830;
+    transition: .3s;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.video-card video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 15px;
+    background: #222;
+}
+
+.video-card h3 {
+    color: #a52d63;
+    margin-top: 15px;
+    font-size: 21px;
+}
+
+.video-card p {
+    color: #806779;
+    margin-top: 5px;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    15% { opacity: .8; }
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+#confettiCanvas {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 100;
+}
+
+@media(max-width: 600px) {
+    .countdown {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .slide img {
+        height: 300px;
+    }
+
+    .section {
+        padding: 48px 15px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .love-note {
+        font-size: 17px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<canvas id="confettiCanvas"></canvas>
+
+<!-- HERO SECTION -->
+<header class="hero">
+    <div class="hero-content">
+        <p class="small-heading">A BEAUTIFUL JOURNEY OF LOVE</p>
+
+        <h1>
+            Shahidullah
+            <span class="heart">♥</span>
+            Nasrin
+        </h1>
+
+        <p class="subtitle">
+            দুটি হৃদয়, একটি ভালোবাসা, একসাথে পথচলা...
+        </p>
+
+        <div class="wedding-date">
+            💍 আমাদের শুভ বিবাহ: ১৬ অক্টোবর, ২০২৬ খ্রি.
+        </div>
+
+        <div class="music-area">
+            <button class="music-button" id="musicButton" onclick="toggleMusic()">
+                🎵 Play Music
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- COUNTDOWN SECTION -->
+<section class="section">
+    <h2 class="section-title">Our Anniversary Countdown 💗</h2>
+    <p class="section-subtitle">
+        ভালোবাসার বিশেষ দিনটির জন্য অপেক্ষা...
+    </p>
+
+    <div class="countdown-card">
+        <h3 id="countdownHeading">আমাদের পরবর্তী বিবাহবার্ষিকী</h3>
+
+        <div class="countdown" id="countdown">
+            <div class="time-box">
+                <span id="days">00</span>
+                <small>দিন</small>
+            </div>
+
+            <div class="time-box">
+                <span id="hours">00</span>
+                <small>ঘণ্টা</small>
+            </div>
+
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <small>মিনিট</small>
+            </div>
+
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <small>সেকেন্ড</small>
+            </div>
+        </div>
+
+        <div id="anniversaryMessage"></div>
+        <div id="anniversarySub"></div>
+    </div>
+</section>
+
+<!-- PHOTO SLIDESHOW -->
+<section class="section">
+    <h2 class="section-title">Our Beautiful Memories 📸</h2>
+    <p class="section-subtitle">
+        কিছু মুহূর্ত, যা হৃদয়ে চিরদিন থেকে যাবে
+    </p>
+
+    <div class="slideshow">
+
+        <div class="slide active">
+            <img src="img/photo1.jpeg" alt="Our memory 1">
+        </div>
+
+        <div class="slide">
+            <img src="img/photo2.jpeg" alt="Our memory 2">
+        </div>
+
+        <div class="slide">
+            <img src="img/photo3.jpeg" alt="Our memory 3">
+        </div>
+
+        <div class="slide">
+            <img src="img/photo4.jpeg" alt="Our memory 4">
+        </div>
+        <div class="slide">
+            <img src="img/photo5.jpeg" alt="Our memory 5">
+        </div>
+        <div class="slide">
+            <img src="img/photo6.jpeg" alt="Our memory 6">
+        </div>
+        <div class="slide">
+            <img src="img/photo7.jpeg" alt="Our memory 7">
+        </div>
+        <div class="slide">
+            <img src="img/photo8.jpeg" alt="Our memory 8">
+        </div>
+        <div class="slide">
+            <img src="img/photo9.jpeg" alt="Our memory 9">
+        </div>
+        <div class="slide">
+            <img src="img/photo10.jpeg" alt="Our memory 9">
+        </div>
+    </div>
+
+    <div class="slide-controls">
+        <button onclick="changeSlide(-1)">❮ Previous</button>
+        <button onclick="changeSlide(1)">Next ❯</button>
+    </div>
+</section>
+
+<!-- VIDEO MEMORIES SECTION -->
+
+<section class="section" id="videoMemories">
+
+    <h2 class="section-title">
+        Our Video Memories 🎬
+    </h2>
+
+    <p class="section-subtitle">
+        আমাদের জীবনের সুন্দর মুহূর্তগুলো ভিডিওতে ❤️
+    </p>
+
+    <div class="video-container">
+
+        <div class="video-card">
+            <video controls playsinline preload="metadata">
+                <source src="video/wedding.mp4" type="video/mp4">
+                আপনার ব্রাউজার ভিডিও চালাতে পারছে না।
+            </video>
+            <h3>💍 Our Wedding Day</h3>
+            <p>১৬ অক্টোবর ২০২৬ — আমাদের শুভ বিবাহ</p>
+        </div>
+
+        <div class="video-card">
+            <video controls playsinline preload="metadata">
+                <source src="video/memories.mp4" type="video/mp4">
+                আপনার ব্রাউজার ভিডিও চালাতে পারছে না।
+            </video>
+            <h3>💕 Our Beautiful Memories</h3>
+            <p>একসঙ্গে কাটানো কিছু সুন্দর মুহূর্ত</p>
+        </div>
+
+        <div class="video-card">
+            <video controls playsinline preload="metadata">
+                <source src="video/special.mp4" type="video/mp4">
+                আপনার ব্রাউজার ভিডিও চালাতে পারছে না।
+            </video>
+            <h3>❤️ Forever Together</h3>
+            <p>আমাদের ভালোবাসার গল্প</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- LOVE STORY -->
+<section class="section">
+    <h2 class="section-title">Our Love Story 💕</h2>
+    <p class="section-subtitle">
+        আমাদের পথচলার কিছু স্মরণীয় অধ্যায়
+    </p>
+
+    <div class="story-container">
+
+        <div class="story-item">
+            <div class="story-date">০৮ ডিসেম্বর, ২০২৫ খ্রি.</div>
+            <h3>প্রথম পরিচয় 💌</h3>
+            <p>
+                মেসেঞ্জারে প্রথম কথা। ছোট্ট একটি কথোপকথন
+                থেকে শুরু হয়েছিল আমাদের সুন্দর গল্প।
+            </p>
+        </div>
+
+        <div class="story-item">
+            <div class="story-date">০৭ আগস্ট, ২০২৬ খ্রি.</div>
+            <h3>প্রথম দেখা 🚉</h3>
+            <p>
+                কুষ্টিয়া রেলওয়ে স্টেশনে প্রথম দেখা।
+                সেই মুহূর্তটি আমাদের জীবনের এক বিশেষ স্মৃতি।
+            </p>
+        </div>
+
+        <div class="story-item">
+            <div class="story-date">১৬ অক্টোবর, ২০২৬ খ্রি.</div>
+            <h3>শুভ বিবাহ 💍</h3>
+            <p>
+                দুটি জীবন এক হলো। শুরু হলো একসাথে
+                স্বপ্ন দেখা ও পথচলার নতুন অধ্যায়।
+            </p>
+        </div>
+
+        <div class="story-item">
+            <div class="story-date">১৬ অক্টোবর, ২০২৭ খ্রি.</div>
+            <h3>১ম বিবাহ বার্ষিকী ❤️</h3>
+            <p>
+                একসাথে কাটানো ভালোবাসার প্রথম পূর্ণ বছর।
+                সামনে আরও অনেক সুন্দর দিনের অপেক্ষা।
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- LOVE MESSAGE -->
+<section class="section">
+    <div class="love-note">
+        <h2>প্রিয় নাসরিন, ❤️</h2>
+
+        <p>
+            জীবনের প্রতিটি সুন্দর মুহূর্তে তোমাকে পাশে চাই।
+            সুখে-দুঃখে, হাসি-কান্নায়, প্রতিটি দিন
+            তোমার হাত ধরে এগিয়ে যেতে চাই।
+        </p>
+
+        <p>
+            তুমি শুধু আমার জীবনসঙ্গী নও,
+            তুমি আমার স্বপ্ন, আমার শান্তি,
+            আমার জীবনের সবচেয়ে সুন্দর গল্প।
+        </p>
+
+        <p>
+            আমাদের ভালোবাসা প্রতিটি বছর আরও গভীর হোক।
+            একসাথে কাটুক জীবনের প্রতিটি সকাল ও সন্ধ্যা।
+        </p>
+
+        <div class="signature">
+            ইতি,<br>
+            তোমার শহীদুল্লাহ ❤️
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Made with <span class="footer-heart">♥</span> for Shahidullah & Nasrin</p>
+    <p>Our Love Story — Forever & Always</p>
+    <p>© 2026 | Together Forever 💕</p>
+</footer>
+
+<!-- BACKGROUND MUSIC -->
+<audio id="backgroundMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+/* ===================================
+   ANNIVERSARY COUNTDOWN
+=================================== */
+
+// প্রকৃত বিবাহের তারিখ: ১৬ অক্টোবর ২০২৬
+// JavaScript-এ অক্টোবর মাসের নম্বর 9
+
+const weddingDate = new Date(2026, 9, 16, 0, 0, 0);
+
+const daysEl = document.getElementById("days");
+const hoursEl = document.getElementById("hours");
+const minutesEl = document.getElementById("minutes");
+const secondsEl = document.getElementById("seconds");
+
+const countdownEl = document.getElementById("countdown");
+const anniversaryMessage = document.getElementById("anniversaryMessage");
+const anniversarySub = document.getElementById("anniversarySub");
+const countdownHeading = document.getElementById("countdownHeading");
+
+function getOrdinal(number) {
+    const lastTwo = number % 100;
+
+    if (lastTwo >= 11 && lastTwo <= 13) {
+        return number + "th";
+    }
+
+    switch (number % 10) {
+        case 1: return number + "st";
+        case 2: return number + "nd";
+        case 3: return number + "rd";
+        default: return number + "th";
+    }
+}
+
+function getAnniversaryNumber(date) {
+    let year = date.getFullYear();
+
+    const anniversaryThisYear = new Date(year, 9, 16, 0, 0, 0);
+
+    // ১৬ অক্টোবরের আগে চলতি বছরের বিবাহবার্ষিকী হয়নি
+    if (date < anniversaryThisYear) {
+        return year - weddingDate.getFullYear() - 1;
+    }
+
+    return year - weddingDate.getFullYear();
+}
+
+function getNextAnniversary(date) {
+    let year = date.getFullYear();
+
+    let target = new Date(year, 9, 16, 0, 0, 0);
+
+    // আজ ১৬ অক্টোবর হলে বিশেষ দিনের বার্তা দেখাবে
+    if (date.getMonth() === 9 && date.getDate() === 16) {
+        return target;
+    }
+
+    if (date > target) {
+        target = new Date(year + 1, 9, 16, 0, 0, 0);
+    }
+
+    return target;
+}
+
+function updateCountdown() {
+    const now = new Date();
+
+    const isAnniversaryDay =
+        now.getMonth() === 9 &&
+        now.getDate() === 16 &&
+        now.getFullYear() >= 2027;
+
+    const anniversaryNumber = getAnniversaryNumber(now);
+
+    if (isAnniversaryDay) {
+
+        countdownEl.style.display = "none";
+
+        countdownHeading.innerText = "আজ আমাদের বিশেষ দিন!";
+
+        anniversaryMessage.style.display = "block";
+        anniversarySub.style.display = "block";
+
+        anniversaryMessage.innerHTML =
+            "🎉 Happy " + getOrdinal(anniversaryNumber) +
+            " Wedding Anniversary! ❤️";
+
+        anniversarySub.innerHTML =
+            "শুভ " + anniversaryNumber +
+            "তম বিবাহ বার্ষিকী, শহীদুল্লাহ ও নাসরিন। " +
+            "ভালোবাসা থাকুক চিরকাল। 💕";
+
+        return;
+    }
+
+    countdownEl.style.display = "grid";
+    anniversaryMessage.style.display = "none";
+    anniversarySub.style.display = "none";
+
+    const nextDate = getNextAnniversary(now);
+
+    const difference = nextDate.getTime() - now.getTime();
+
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+        (difference / (1000 * 60 * 60)) % 24
+    );
+    const minutes = Math.floor(
+        (difference / (1000 * 60)) % 60
+    );
+    const seconds = Math.floor(
+        (difference / 1000) % 60
+    );
+
+    daysEl.innerText = String(days).padStart(2, "0");
+    hoursEl.innerText = String(hours).padStart(2, "0");
+    minutesEl.innerText = String(minutes).padStart(2, "0");
+    secondsEl.innerText = String(seconds).padStart(2, "0");
+
+    if (nextDate.getFullYear() === 2027) {
+        countdownHeading.innerText =
+            "আমাদের ১ম বিবাহ বার্ষিকীর কাউন্টডাউন ❤️";
+    } else {
+        const nextAnniversaryNumber =
+            nextDate.getFullYear() - weddingDate.getFullYear();
+
+        countdownHeading.innerText =
+            "আমাদের " + getOrdinal(nextAnniversaryNumber) +
+            " বিবাহ বার্ষিকীর কাউন্টডাউন ❤️";
+    }
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+
+/* ===================================
+   PHOTO SLIDESHOW
+=================================== */
+
+let currentSlide = 0;
+
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(index) {
+
+    slides.forEach(slide => {
+        slide.classList.remove("active");
+    });
+
+    currentSlide = (index + slides.length) % slides.length;
+
+    slides[currentSlide].classList.add("active");
+}
+
+function changeSlide(direction) {
+    showSlide(currentSlide + direction);
+}
+
+// প্রতি ৪ সেকেন্ডে ছবি পরিবর্তন
+setInterval(() => {
+    changeSlide(1);
+}, 4000);
+
+
+/* ===================================
+   BACKGROUND MUSIC
+=================================== */
+
+const music = document.getElementById("backgroundMusic");
+const musicButton = document.getElementById("musicButton");
+
+function toggleMusic() {
+
+    if (music.paused) {
+
+        music.play().then(() => {
+            musicButton.innerHTML = "⏸ Pause Music";
+        }).catch(() => {
+            musicButton.innerHTML = "🎵 Play Music";
+            alert("মিউজিক চালু করতে আবার বাটনে ক্লিক করুন।");
+        });
+
+    } else {
+
+        music.pause();
+        musicButton.innerHTML = "🎵 Play Music";
+
+    }
+}
+
+
+/* ===================================
+   FLOATING HEARTS
+=================================== */
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "floating-heart";
+    heart.innerHTML = Math.random() > 0.5 ? "❤" : "💕";
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (15 + Math.random() * 25) + "px";
+    heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 10000);
+}
+
+setInterval(createHeart, 800);
+
+
+/* ===================================
+   CONFETTI CELEBRATION
+=================================== */
+
+const canvas = document.getElementById("confettiCanvas");
+const ctx = canvas.getContext("2d");
+
+let confettiPieces = [];
+let confettiActive = false;
+
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+
+resizeCanvas();
+window.addEventListener("resize", resizeCanvas);
+
+function launchConfetti() {
+
+    confettiPieces = [];
+
+    for (let i = 0; i < 150; i++) {
+        confettiPieces.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * -canvas.height,
+            size: Math.random() * 8 + 4,
+            speed: Math.random() * 4 + 2,
+            angle: Math.random() * 6,
+            rotation: Math.random() * 0.2
+        });
+    }
+
+    confettiActive = true;
+    animateConfetti();
+
+    setTimeout(() => {
+        confettiActive = false;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }, 7000);
+}
+
+function animateConfetti() {
+
+    if (!confettiActive) return;
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    confettiPieces.forEach((piece, index) => {
+
+        piece.y += piece.speed;
+        piece.x += Math.sin(piece.angle) * 2;
+        piece.angle += piece.rotation;
+
+        ctx.fillStyle = [
+            "#ff5b91",
+            "#ffc857",
+            "#a78bfa",
+            "#ffffff",
+            "#ff9f68"
+        ][index % 5];
+
+        ctx.fillRect(
+            piece.x,
+            piece.y,
+            piece.size,
+            piece.size
+        );
+
+        if (piece.y > canvas.height) {
+            piece.y = -10;
+            piece.x = Math.random() * canvas.width;
+        }
+    });
+
+    requestAnimationFrame(animateConfetti);
+}
+
+
+/* ===================================
+   ANNIVERSARY DAY AUTO CELEBRATION
+=================================== */
+
+function checkCelebration() {
+
+    const now = new Date();
+
+    const isAnniversaryDay =
+        now.getMonth() === 9 &&
+        now.getDate() === 16 &&
+        now.getFullYear() >= 2027;
+
+    if (isAnniversaryDay) {
+        launchConfetti();
+    }
+}
+
+checkCelebration();
+
+</script>
+
+</body>
+</html>
